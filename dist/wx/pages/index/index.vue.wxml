@@ -1,0 +1,68 @@
+<template name="1f931f40">
+  <view class="_div data-v-17dc3823 wrap">
+    <view class="_div data-v-17dc3823 header">
+      <view class="_div data-v-17dc3823 h-left">
+        <view class="_h1 data-v-17dc3823">豆瓣 <icon type="search" size="18" color="#42bd56" class="_icon data-v-17dc3823"></icon>
+        </view>
+      </view>
+      <view class="_div data-v-17dc3823 h-right"><button class="_button data-v-17dc3823 openApp">打开豆瓣APP</button></view>
+    </view>
+    <view class="_div data-v-17dc3823 list">
+      <view class="_div data-v-17dc3823 title">
+        <view class="_h2 data-v-17dc3823">影院热映</view>
+        <navigator url="#" class="_navigator data-v-17dc3823 more">更多</navigator>
+      </view>
+      <view class="_div data-v-17dc3823 scroll">
+        <scroll-view scroll-x style="width: 100%" class="_scroll-view data-v-17dc3823 scroll-wrap">
+          <view class="_view data-v-17dc3823 item" wx:key="index" key="{{index}}" wx:for="{{onMovie}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-17dc3823 movieImg">
+              <image src="{{item.images.small}}" class="_image data-v-17dc3823"></image>
+            </view>
+            <view class="_div data-v-17dc3823 msg">
+              <view class="_div data-v-17dc3823 moviename">{{item.title}}</view>
+              <view class="_div data-v-17dc3823 score">评分:</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="_div data-v-17dc3823 list">
+      <view class="_div data-v-17dc3823 title">
+        <view class="_h2 data-v-17dc3823">即将上映</view>
+        <navigator url="#" class="_navigator data-v-17dc3823 more">更多</navigator>
+      </view>
+      <view class="_div data-v-17dc3823 scroll">
+        <scroll-view scroll-x style="width: 100%" class="_scroll-view data-v-17dc3823 scroll-wrap">
+          <view class="_view data-v-17dc3823 item" wx:key="index" key="{{index}}" wx:for="{{comminSoon}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-17dc3823 movieImg">
+              <image src="{{item.images.small}}" class="_image data-v-17dc3823"></image>
+            </view>
+            <view class="_div data-v-17dc3823 msg">
+              <view class="_div data-v-17dc3823 moviename">{{item.title}}</view>
+              <view class="_div data-v-17dc3823 score">评分:</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="_div data-v-17dc3823 list">
+      <view class="_div data-v-17dc3823 title">
+        <view class="_h2 data-v-17dc3823">TOP250</view>
+        <navigator url="#" class="_navigator data-v-17dc3823 more">更多</navigator>
+      </view>
+      <view class="_div data-v-17dc3823 scroll">
+        <scroll-view scroll-x style="width: 100%" class="_scroll-view data-v-17dc3823 scroll-wrap">
+          <view class="_view data-v-17dc3823 item" wx:key="index" key="{{index}}" wx:for="{{top250}}" wx:for-index="index" wx:for-item="item">
+            <view class="_div data-v-17dc3823 movieImg">
+              <image src="{{item.images.small}}" class="_image data-v-17dc3823"></image>
+            </view>
+            <view class="_div data-v-17dc3823 msg">
+              <view class="_div data-v-17dc3823 moviename">{{item.title}}</view>
+              <view class="_div data-v-17dc3823 score">评分:</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</template>
