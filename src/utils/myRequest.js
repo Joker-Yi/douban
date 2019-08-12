@@ -20,7 +20,7 @@ function myRequest(options){
         })
     })
 }
-//方法暴露出去                                                                             
+//方法暴露出去
 export default myRequest;
 
 
